@@ -3,7 +3,7 @@
   * this is all im figuring out by my own how can i do it.
   * After implementing my own solution i will check out how to write it properly and compare my practice or version of algorithm to the orignal proper way to implement it.*/
 fun main() {
-        val searchValue = 500
+        val searchValue = 600
         val array = arrayOf(1, 2, 40, 50, 60, 70, 80, 100, 400, 500, 600) // array must be sorted
         val found = jumpSearch(searchValue, array)
         println(found)
@@ -42,8 +42,8 @@ fun jumpSearch(value: Int, array: Array<Int>): Boolean{
             return true
         }
         if(array[(i -1)*m] < value && value < array[n]) { // then we will check from the last end point of block we had before to the nth index of array
-            for (index in (i-1)*m until n) if (array[index] == value){
-                println("At index: $index")
+            for (index in ((i-1)*m)+1 until n) if (array[index] == value){  // checking from ((i-1)*m + 1) because we have already checked (i-1)* m ) end  point of block above in while loop
+                println("At index: $index")                                 // also we are not checking for the nth element because it is also checked above.
                 return true
             }
 
