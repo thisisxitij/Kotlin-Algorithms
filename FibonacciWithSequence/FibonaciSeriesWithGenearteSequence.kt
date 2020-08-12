@@ -8,8 +8,8 @@ fun main() {
 }
 
 fun fibonacciSeries(): Sequence<Int>{
-    return generateSequence(Pair(0,1)) { Pair(it.second, it.first + it.second) } // passing pair as seed  and changed the first element value to second and second to the sum fo first and second
-            // when next is called again this new value pair will also be passed
-            .map{it.first} //returning  first element from pair before again calling the nextFunction which is  invoked by Iterator.next()
+    // seed provides the initial value and nextFunction()  is called upon the seed
+    return generateSequence(Pair(0,1)) { Pair(it.second, it.first + it.second) } //  returning the new pair and calling nextFunction upon it
+            .map{it.first} //returning  first element from pair before again calling the nextFunction which is invoked by Iterator.next()
 
 }
