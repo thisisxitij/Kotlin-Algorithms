@@ -1,5 +1,4 @@
-
- /** Note this is my own practice of implementing jump search and at this point i have'nt seen how to do it.
+ /** Note this is my own practice of implementing jump `binary search `.search and at this point i have'nt seen how to do it.
   * this is all im figuring out by my own how can i do it.
   * After implementing my own solution i will check out how to write it properly and compare my practice or version of algorithm to the orignal proper way to implement it.*/
 fun main() {

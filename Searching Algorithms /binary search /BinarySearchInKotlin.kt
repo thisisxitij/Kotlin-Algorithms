@@ -1,7 +1,7 @@
-// lets create binary search in kotlin
+// lets create binary `binary search `.search in kotlin
 
 fun main() {
-    // array must be sorted other wise binary search not behave correctly
+    // array must be sorted other wise binary `binary search `.search not behave correctly
     val searchValue = 10
     val array: Array<Int> = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
@@ -15,7 +15,7 @@ fun main() {
 }
 
 
-// Time complexity of binary search is O(log n)
+// Time complexity of binary `binary search `.search is O(log n)
 fun search(value: Int, array: Array<Int>): Boolean {
     var lowerBond = 0
     var upperBond  = array.size - 1
