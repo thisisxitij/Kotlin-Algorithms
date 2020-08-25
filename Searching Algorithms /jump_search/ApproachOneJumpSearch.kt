@@ -4,13 +4,13 @@
 fun main() {
         val searchValue = 600
         val array = arrayOf(1, 2, 40, 50, 60, 70, 80, 100, 400, 500, 600) // array must be sorted
-        val found = jumpSearch(searchValue, array)
+        val found = jumpSearchApproachOne(searchValue, array)
         println(found)
 
 
 }
 
-fun jumpSearch(value: Int, array: Array<Int>): Boolean{
+ fun jumpSearchApproachOne(value: Int, array: Array<Int>): Boolean{
 
     var i = 0
     val m = 4 // block size

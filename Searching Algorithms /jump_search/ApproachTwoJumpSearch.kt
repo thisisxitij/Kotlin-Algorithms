@@ -5,14 +5,14 @@ fun main() {
 
     val searchValue  = 40
     val numberArray  = arrayOf(10, 20, 40, 50, 80, 100, 300, 350, 400, 456, 500)
-    val found: Boolean  = jumpSearch(searchValue, numberArray)
+    val found: Boolean  = jumpSearchApproachTwo(searchValue, numberArray)
 
     if (found) println("value: $searchValue is present")
     else println("value: $searchValue is not present !")
 
 }
 
-fun jumpSearch(value: Int, array: Array<Int>): Boolean {
+private fun jumpSearchApproachTwo(value: Int, array: Array<Int>): Boolean {
 
     val m = 4 // size of block.
     val n = array.size -1 // size of array.
