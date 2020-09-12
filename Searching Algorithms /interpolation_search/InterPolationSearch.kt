@@ -3,8 +3,7 @@ package interpolation_search
 fun main() {
 
     val testArray: Array<Int> = arrayOf(10, 20,  32, 45, 51, 62, 78 ,89)
-
-    val found: Boolean= interpolationSearch(10, testArray)
+    val found: Boolean= interpolationSearch(89, testArray)
 
     println("value ${if(!found) "not found !" else "found !"}")
 
