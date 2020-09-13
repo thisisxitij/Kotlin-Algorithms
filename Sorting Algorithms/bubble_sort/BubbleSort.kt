@@ -11,6 +11,9 @@ fun main() {
 }
 
 // bubble sort with while loop
+// best time complexity: O(n) -> when the array is already sorted
+// worst time complexity: O(n^2) -> when the array is reverse sorted
+
 fun bubbleSortWithWhile(array: Array<Int>) {
 
     val n = array.size -1 // last index of array
