@@ -1,7 +1,7 @@
 package bubble_sort
 
 fun main() {
-    val arrayOne = arrayOf(64, 34, 25, 12, 22, 11, 90)
+    val arrayOne = arrayOf(5, 4, 3, 2, 1)
     println("Unsorted Array One: ${arrayOne.toList()}")
 
     // sort array
@@ -21,12 +21,12 @@ fun bubbleSortWithWhile(array: Array<Int>) {
     var i = 0
     var swapped: Boolean // to check the array is already sorted
 
-    while(i < n) {
+    while(i <= n) {
         swapped = false
 
         // for traversing the array
         var j = 0
-        while(j < n -i -1) { // because we know last value in array is already sorted after one iteration of outer while gets completed
+        while(j <= n -i -1) { // because we know last value in array is already sorted after one iteration of outer while gets completed
 
             // swap the value at j  with value at j+1 if the value is greater at index j then the value at index j +1
             if (array[j] > array[j +1]) {
